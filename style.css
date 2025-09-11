@@ -167,8 +167,8 @@ main {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
 }
 
 .project-card {
@@ -180,6 +180,9 @@ main {
     cursor: pointer;
     transform: translateY(0) rotateX(0);
     position: relative;
+    animation: subtleBounce 3s ease-in-out infinite;
+    max-width: 280px;
+    margin: 0 auto;
 }
 
 .project-card::before {
@@ -208,7 +211,7 @@ main {
 }
 
 .project-image {
-    height: 200px;
+    height: 150px;
     background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
     display: flex;
     align-items: center;
@@ -249,8 +252,13 @@ main {
     50% { transform: translateY(-10px); }
 }
 
+@keyframes subtleBounce {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-3px); }
+}
+
 .project-content {
-    padding: 1.5rem;
+    padding: 1.2rem;
 }
 
 .project-content h3 {

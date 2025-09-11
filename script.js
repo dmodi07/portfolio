@@ -22,9 +22,12 @@ document.addEventListener('DOMContentLoaded', function() {
             
             setTimeout(() => {
                 this.classList.remove('clicked');
+                
+                // Redirect to supply chain project for first card
+                if (projectId === '1') {
+                    window.open('https://dmodi07.github.io/Supply-Chain/', '_blank');
+                }
             }, 150);
-            
-            console.log(`Project ${projectId} clicked - ready for link integration`);
         });
         
 
