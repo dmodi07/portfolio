@@ -27,6 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (projectId === '1') {
                     window.open('https://dmodi07.github.io/Supply-Chain/', '_blank');
                 }
+                // Redirect to weather app for second card
+                if (projectId === '2') {
+                    window.open('https://dmodi07.github.io/weather/', '_blank');
+                }
             }, 150);
         });
         
